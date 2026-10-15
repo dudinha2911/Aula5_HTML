@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Compartilhados</title>
+    <style>
+        *{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #titulo{
+            background-color: brown;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        #titulo1{
+            background-color: white;
+            text-align: center;
+            color: brown;
+        }
+        #titulo2{
+            background-color: brown;
+            text-align: center;
+            color: white
+        }
+        #paragrafo1{
+            text-align: center;
+        }
+        #sintaxe{
+            font-style: italic;
+            color: brown;
+            font-weight: bold;
+
+        }
+    </style>
+
+    <h1 id="titulo">SELETORES</h1>
+
+</head>
+<body>
+    <hr>
+    <h2 id="titulo1">Seletores por Atributos </h2>
+    <hr>
+    <p id="paragrafo1">Este seletor básico irá escolher todos os nós. Ele também existe em um namespace único e em uma variante de todo o namespace também.</p>
+    <p id="sintaxe">SINTAXE: elemento[atributo="valor"]</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo2">Seletores de Descendentes</h2>
+    <hr>
+    <p id="paragrafo1">Seleciona todos os elementos que estejam aninhados dentro de um elemento pai, independentemente do nível de profundidade (filhos, netos, bisnetos, etc.</p>
+    <p id="sintaxe">SINTAXE: selector1 selector2 {/* property declarations */}</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo1">Seletores Filho Direto</h2>
+    <hr>
+    <p id="paragrafo1">Seleciona apenas os elementos que são filhos imediatos de um elemento pai, ignorando netos ou níveis mais profundos.</p>
+    <p id="sintaxe">SINTAXE: pai > filho_direto</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo2">Seletores Adjacente Direto</h2>
+    <hr>
+    <p id="paragrafo1">Seleciona um elemento que é o próximo irmão imediato de outro, ou seja, que vem logo após ele e compartilha o mesmo pai.</p>
+    <p id="sintaxe">SINTAXE: elemento1 + elemento2</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo1">Seletores de Irmãos Gerais</h2>
+    <hr>
+    <p id="paragrafo1">Seleciona todos os elementos irmãos que vêm depois de um determinado elemento de referência na estrutura do código, mesmo que existam outras tags entre eles.</p>
+    <p id="sintaxe">SINTAXE: elemento1 ~ elemento2</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo2">Seletores de Pseudoclasse</h2>
+    <hr>
+    <p id="paragrafo1">estado especial ou em interações do usuário (como passar o mouse, foco no input ou ordem estrutural).</p>
+    <p id="sintaxe">SINTAXE: elemento:pseudoclasse</p>
+    <hr>
+    <br><br>
+
+    <hr>
+    <h2 id="titulo1">Seletores de Pseudoelemento</h2>
+    <hr>
+    <p id="paragrafo1">Utilizado para estilizar partes específicas de um elemento ou para injetar conteúdo puramente visual via CSS sem modificar o arquivo HTML.</p>
+    <p id="sintaxe">SINTAXE: elemento::pseudoelemento</p>
+    <hr>
+    <br>
+
+    
+</body>
+</html>
